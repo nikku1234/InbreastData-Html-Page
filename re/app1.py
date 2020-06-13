@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     ### Generating X,Y coordinaltes to be used in plot
-    nuumpy.load('C:\\Users\\Ravitha\\Downloads\train')
+    nuumpy.load('../Inbreastdata.npy')
     X = numpy.linspace(0,10,30)
     Y = X*X
     ### Generating The Plot
