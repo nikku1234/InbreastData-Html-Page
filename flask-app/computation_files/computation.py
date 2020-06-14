@@ -21,23 +21,33 @@ print(size)
 # img_name = filename +".png"
 # matplotlib.image.imsave(img_name, data[0])
 # print(filename + " was saved")
+
+# for conversion of the files in .npy to .png
+# for i in range(size):
+#     filename = "image"+str(i)
+#     img_name = filename +".png"
+#     matplotlib.image.imsave(img_name, data[i],cmap="gray")
+#     print(filename + " was saved")
+
 for i in range(size):
-    filename = "image"+str(i)
-    img_name = filename +".png"
-    matplotlib.image.imsave(img_name, data[i])
-    print(filename + " was saved")
+    X = numpy.linspace(data[i])
+    Y = X*X
+    ### Generating The Plot
+    plt.plot(X,Y)
+    ### Saving plot to disk in png format
+    plt.savefig('plt.png')
 
 
 
 
-# savetxt('data.csv', data, delimiter=',')
-# numpy.savetxt('data.txt',data, delimiter=' ')
-X = numpy.linspace(0,10,30)
-Y = X*X
-### Generating The Plot
-plt.plot(X,Y)
-### Saving plot to disk in png format
-plt.savefig('plt.png')
+# # savetxt('data.csv', data, delimiter=',')
+# # numpy.savetxt('data.txt',data, delimiter=' ')
+# X = numpy.linspace(0,10,30)
+# Y = X*X
+# ### Generating The Plot
+# plt.plot(X,Y)
+# ### Saving plot to disk in png format
+# plt.savefig('plt.png')
 
 ### Rendering Plot in Html
 figfile = BytesIO()
