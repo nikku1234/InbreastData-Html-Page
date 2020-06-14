@@ -7,6 +7,7 @@ data = numpy.load('../Inbreastdata.npy')
 print(type(data))
 print(len(data))
 print(data.shape)
+print(data)
 # numpy.savetxt('data.txt',data, delimiter=' ')
 X = numpy.linspace(0,10,30)
 Y = X*X
