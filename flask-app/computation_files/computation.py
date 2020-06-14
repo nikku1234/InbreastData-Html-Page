@@ -30,12 +30,14 @@ print(size)
 #     print(filename + " was saved")
 
 for i in range(size):
-    X = numpy.linspace(data[i])
+    X = numpy.linspace(i,10,30)
     Y = X*X
     ### Generating The Plot
     plt.plot(X,Y)
+    filename = "image_plot"+str(i)
+    img_name = filename +".png"
     ### Saving plot to disk in png format
-    plt.savefig('plt.png')
+    plt.savefig(filename+'.png')
 
 
 
