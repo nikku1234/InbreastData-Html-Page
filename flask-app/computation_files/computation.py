@@ -3,7 +3,11 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
 ### Generating X,Y coordinaltes to be used in plot
-numpy.load('../Inbreastdata.npy')
+data = numpy.load('../Inbreastdata.npy')
+print(type(data))
+print(len(data))
+print(data.shape)
+# numpy.savetxt('data.txt',data, delimiter=' ')
 X = numpy.linspace(0,10,30)
 Y = X*X
 ### Generating The Plot
