@@ -14,11 +14,19 @@ print(data.shape)
 print(data[0])
 size= len(data)
 print(size)
-filename = "new-image"
-#Save as png
-img_name = filename +".png"
-matplotlib.image.imsave(img_name, data[0])
-print(filename + " was saved")
+# for one file
+
+# filename = "new-image"
+# #Save as png
+# img_name = filename +".png"
+# matplotlib.image.imsave(img_name, data[0])
+# print(filename + " was saved")
+for i in range(size):
+    filename = "image"+str(i)
+    img_name = filename +".png"
+    matplotlib.image.imsave(img_name, data[i])
+    print(filename + " was saved")
+
 
 
 
