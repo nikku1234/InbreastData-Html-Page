@@ -23,12 +23,13 @@ print(size)
 # print(filename + " was saved")
 
 # for conversion of the files in .npy to .png
-# for i in range(size):
-#     filename = "image"+str(i)
-#     img_name = filename +".png"
-#     matplotlib.image.imsave(img_name, data[i],cmap="gray")
-#     print(filename + " was saved")
+for i in range(size):
+    filename = "image"+str(i)
+    img_name = filename +".png"
+    matplotlib.image.imsave("images/"+img_name, data[i],cmap="gray")
+    print(filename + " was saved")
 
+# for conversion of the files in .npy to plt images
 for i in range(size):
     X = numpy.linspace(i,10,30)
     Y = X*X
@@ -37,7 +38,7 @@ for i in range(size):
     filename = "image_plot"+str(i)
     img_name = filename +".png"
     ### Saving plot to disk in png format
-    plt.savefig(filename+'.png')
+    plt.savefig("plots/"+filename+'.png')
 
 
 
