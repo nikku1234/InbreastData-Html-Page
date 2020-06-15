@@ -5,4 +5,4 @@ To view the InbreastData data present in the .npy data file to a flask applicati
 
 python3 -m venv flask-env
 
-source env/bin/activate      
+source flask-env/bin/activate      

@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/nikhil/Documents/GitHub/InbreastData-Html-Page/flask-by-example/flask-env"
+VIRTUAL_ENV="/Users/nikhil/Documents/GitHub/InbreastData-Html-Page/flask-app/flask-env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
