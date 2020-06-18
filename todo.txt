@@ -1,3 +1,5 @@
 create a new app
 get all the .npy data files and push it to a html dynamically without storing.
 priority :asap
+remove all the unwanted files
+fix the error while redirecting into the html page
