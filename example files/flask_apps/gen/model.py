@@ -40,4 +40,4 @@ for name, value in zip(arg_names, defaults):
 if __name__ == '__main__':
     for item in dir(InputForm):
         if item in arg_names:
-            print item, getattr(InputForm, item)
+            print (item, getattr(InputForm, item))
