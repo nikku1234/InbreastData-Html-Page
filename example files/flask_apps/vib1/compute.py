@@ -25,4 +25,4 @@ def compute(A, b, w, T, resolution=500):
     return plotfile
 
 if __name__ == '__main__':
-    print compute(1, 0.1, 1, 20)
+    print (compute(1, 0.1, 1, 20))

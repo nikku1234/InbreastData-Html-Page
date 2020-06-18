@@ -35,4 +35,4 @@ Bokeh.set_log_level("info");
     return head, script, div
 
 if __name__ == '__main__':
-    print compute(A=1, b=0.2, w=6.28, T=4, resolution=500)
+    print (compute(A=1, b=0.2, w=6.28, T=4, resolution=500))
