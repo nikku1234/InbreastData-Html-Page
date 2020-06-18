@@ -23,7 +23,14 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     ### Generating X,Y coordinaltes to be used in plot
-    numpy.load('Inbreastdata.npy')
+    # numpy.load('Inbreastdata.npy')
+    data = numpy.load('Inbreastdata.npy')
+    # print(type(data))
+    # print(len(data))
+    # print(data.shape)
+    # print(data[0])
+    size= len(data)
+    # print(size)
     # X = numpy.linspace(0,10,30)
     # Y = X*X
     ### Generating The Plot
