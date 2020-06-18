@@ -9,7 +9,7 @@ class InputForm(Form):
     r = FloatField(validators=[validators.InputRequired()])
 
 # View
-@app.route('/hw1', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
     form = InputForm(request.form)
     if request.method == 'POST' and form.validate():
