@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "/Users/nikhil/Documents/GitHub/InbreastData-Html-Page/flask-env/bin/python3",
+    "python.pythonPath": "flask-env/bin/python",
     "python.formatting.provider": "black"
 }
