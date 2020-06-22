@@ -1,0 +1,11 @@
+<html>
+<body>
+<p>
+{{first_event}} to {{second_event}}
+{% for hist in hists %}
+<img src="{/Users/nikhil/Documents/GitHub/InbreastData-Html-Page/flask-app/computation_files/{hist}}" alt="{{hist}}">
+<img src="{{url_for('images', filename=hist)}}" alt="{{hist}}">
+{% endfor %}
+</p>
+</body>
+</html>
