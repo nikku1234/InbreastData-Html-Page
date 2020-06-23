@@ -10,9 +10,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    hists = os.listdir('../computation_files/images')
-    hists = ['../computation_files/images/' + file for file in hists]
-    # print(hists)
+    hists = os.listdir('../computation_files/static/images')
+    hists = ['images/' + file for file in hists]
+    print(hists)
     return render_template('gallery1.html', hists = hists)
     # image_names = os.listdir('images')
     # image_names = ['images/' + file for file in image_names]
